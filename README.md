@@ -12,6 +12,25 @@
 
 # Local control panel for LTX Video 2.3 on Apple Silicon
 
+<!-- GUMBII-DOCS:START -->
+## Repository Status
+
+- **Repository:** `GumbiiDigital/phosphene`
+- **Title:** phosphene
+- **Classification:** Reference import/private mirror (`reference-import`)
+- **Visibility:** public
+- **Default branch:** `main`
+- **Summary:** Reference import/private mirror: Local generative video panel for Apple Silicon. Wraps LTX-2 MLX, joint audio+video, one-click Pinokio install.
+- **Primary contents:** Root folders: `assets`, `launch` Key root files: `.gitignore`, `LICENSE`, `download_q8.js`, `icon.png`, `install.js`, `mlx_ltx_panel.py`, `mlx_warm_helper.py`, `patch_ltx_codec.py`, `pinokio.js`, `pinokio.json`, `required_files.json`, `reset.js`
+- **Stack/signals:** Python, JavaScript, Shell, Python, JavaScript, Video
+- **Topics:** `audit-high`, `gumbii`, `javascript`, `python`, `reference-import`, `video`
+- **Recommended action:** Keep only if still useful as a reference; otherwise review later later.
+- **Documentation refreshed:** 2026-05-06
+
+This section is maintained by GumbiiDigital repository hygiene tooling. Preserve the markers when editing.
+<!-- GUMBII-DOCS:END -->
+
+
 A polished web panel that wraps the [`dgrauet/ltx-2-mlx`](https://github.com/dgrauet/ltx-2-mlx) MLX port of LTX Video 2.3. Runs entirely locally on Apple Silicon Macs — no cloud, no API keys, no subscription. Persistent batch queue, warm pipeline subprocess, image-to-video with auto cover-crop, lossless h264 output, output gallery with hide/unhide, extend mode for longer clips, and crash-safe queue resume.
 
 The CLI works but isn't ergonomic for batch generation. ComfyUI on Apple Silicon is currently broken/CPU-bound for LTX 2.3 (8 min per step on M4 Max in some reports). This panel fills the gap.
